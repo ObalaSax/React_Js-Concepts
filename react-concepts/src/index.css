@@ -2,21 +2,53 @@
   padding: 0;
   margin: 0;
 }
-
-.card {
-  border: 1px solid black;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px gray;
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  max-width: 240px;
-  display: inline-block;
+/*<<<<<<<<<<<START NAVIGATION BAR>>>>>>>>>>>*/
+.navbar {
+  padding: 25px;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background: gray;
 }
 
-.card-image {
+.navbar img {
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.navbar-links {
+  padding: 15px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+  justify-content: space-between;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.navbar-links li a:hover {
+  background: linear-gradient(135deg, hsl(19, 86%, 37%), hsl(80, 57%, 62%));
   width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  height: 20px;
 }
+
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+}
+
+/*<<<<<<<<<<<END NAVIGATION BAR>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<START CALCULATOR>>>>>>>>>>>*/
+/*<<<<<<<<<<<END CALCULATOR>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<START TODO APP>>>>>>>>>>>*/
+/*<<<<<<<<<<<END TODO>>>>>>>>>>>*/
+
+/*<<<<<<<<<<<START INCREMENT APP>>>>>>>>>>>*/
+/*<<<<<<<<<<<END INCREMENT APP>>>>>>>>>>>*/
