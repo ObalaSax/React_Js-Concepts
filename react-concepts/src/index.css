@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 /*<<<<<<<<<<<START NAVIGATION BAR>>>>>>>>>>>*/
 .navbar {
@@ -8,12 +9,12 @@
   display: flex;
   width: 100%;
   height: 70px;
-  background: gray;
 }
 
 .navbar img {
   margin-left: 20px;
   margin-right: 40px;
+  width: 150px;
 }
 
 .navbar-links {
@@ -25,15 +26,9 @@
 .navbar-links li {
   list-style: none;
   justify-content: space-between;
-  margin-left: 20px;
+  margin: -10px 20px 30px 20px;
+
   cursor: pointer;
-}
-.navbar-links li :hover {
-  background: linear-gradient(135deg, hsl(19, 86%, 37%), hsl(80, 57%, 62%));
-  width: 110px;
-  height: 30px;
-  border-radius: 20px;
-  transition: 0.4s ease-in-out;
 }
 
 .navbar-links li a {
@@ -47,10 +42,204 @@
 /*<<<<<<<<<<<END NAVIGATION BAR>>>>>>>>>>>*/
 
 /*<<<<<<<<<<<START CALCULATOR>>>>>>>>>>>*/
+
+.myCalc {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(120deg, hsl(0, 88%, 47%), hsl(276, 94%, 14%));
+  width: 100%;
+  height: 100vh;
+}
+.calculator {
+  margin: 20px auto 20px;
+  color: white;
+  font-size: larger;
+  height: 100vh;
+  padding: 20px;
+  max-width: 480px;
+  height: 670px;
+  border: 1px black;
+  border-radius: 20px;
+  background: hsl(0, 1%, 23%);
+  align-items: center;
+}
+.input-box input {
+  background: hsl(0, 3%, 66%);
+  width: 100%;
+  height: 70px;
+  border-radius: 20px 20px 5px 5px;
+  border: 0;
+  outline: none;
+  font-size: large;
+  color: white;
+}
+
+.calc-buttons {
+  align-items: center;
+  justify-content: center;
+}
+
+.calc-buttons button {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  background: hsl(0, 1%, 33%);
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+.calc-buttons button:hover {
+  background: hsl(0, 1%, 43%);
+}
+
+.calc-buttons button:active {
+  background: hsl(0, 0%, 45%);
+  transform: scale(0.8);
+}
+
 /*<<<<<<<<<<<END CALCULATOR>>>>>>>>>>>*/
 
 /*<<<<<<<<<<<START TODO APP>>>>>>>>>>>*/
+.my-todo {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, hsl(244, 95%, 41%), hsl(0, 90%, 27%));
+  height: 100vh;
+}
+.todo-elements {
+  max-width: 540px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  padding-top: 20px;
+  margin: auto;
+  border: 1px black;
+  border-radius: 20px;
+}
+
+.todo-title {
+  justify-items: center;
+  align-items: center;
+  align-items: center;
+}
+
+.todo-title h1 {
+  margin: 10px 0 10px 0;
+}
+
+.todo-title h1 img {
+  width: 100px;
+  margin-left: 30px;
+}
+
+.todo-body {
+}
+
+.inputBox {
+  background: linear-gradient(100deg, hsl(12, 4%, 77%), hsl(12, 24%, 96%));
+  border-radius: 20px;
+  height: 40px;
+}
+.inputBox input {
+  height: 40px;
+  padding-left: 10px;
+  width: 80%;
+  background: transparent;
+
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+.inputBox button {
+  height: 40px;
+  background: hsl(0, 96%, 33%);
+  color: white;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  width: 80px;
+}
+.inputBox button:hover {
+  background: hsl(0, 57%, 52%);
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.inputBox button:active {
+  transform: scale(0.8);
+  background-color: hsl(0, 57%, 42%);
+}
+#my-list {
+  padding: 20px 10px 10px 12px;
+  margin: 10px;
+}
+#my-list ul li {
+  list-style: none;
+  margin: 4px;
+  font-size: medium;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
 /*<<<<<<<<<<<END TODO>>>>>>>>>>>*/
 
 /*<<<<<<<<<<<START INCREMENT APP>>>>>>>>>>>*/
+.increment-app {
+  background: linear-gradient(100deg, hsl(0, 1%, 57%), hsl(12, 24%, 96%));
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0;
+}
+.increment-app h1 {
+  color: black;
+  font-size: 30px;
+}
+.inc-content {
+  border-radius: 20px;
+  padding: 20px;
+  width: 540px;
+  height: 540px;
+  padding: 10px;
+  margin: 100px auto 100px;
+  background: white;
+}
+
+.numberBox h1 {
+  margin: 10px;
+}
+.numberBox input {
+  width: 200px;
+  height: 200px;
+  margin: 100px 50px 50px 170px;
+  padding-left: 10px;
+  justify-content: center;
+  background: hsl(0, 3%, 90%);
+  color: black;
+  border-radius: 10px;
+  outline: none;
+  border: 0;
+}
+
+.inc-buttons button {
+  width: 115px;
+  height: 50px;
+  padding: 10px;
+  margin: 05px 30px 30px 20px;
+  display: inline;
+  justify-content: space-evenly;
+  background: hsl(241, 51%, 33%);
+  color: white;
+  font-size: larger;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.inc-buttons button:active {
+  transform: scale(0.9);
+}
 /*<<<<<<<<<<<END INCREMENT APP>>>>>>>>>>>*/
