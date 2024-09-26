@@ -2,6 +2,7 @@ import Logo from "../assets/logo.svg";
 function TodoApp() {
   return (
     <div className="my-todo">
+      <br />
       <div className="todo-elements">
         <div className="todo-title">
           <h1>

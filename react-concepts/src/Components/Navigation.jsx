@@ -1,4 +1,5 @@
 import Logo from "../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
@@ -6,16 +7,16 @@ function Navigation() {
       <img src={Logo} alt="Logo" />
       <ul className="navbar-links">
         <li>
-          <a href="#">Calculator</a>
+          <Link to="/calculator">Calculator</Link>
         </li>
         <li>
-          <a href="#">Todo App</a>
+          <Link to="/todo-app">Todo App</Link>
         </li>
         <li>
-          <a href="#">Increment</a>
+          <Link to="/increment-app">Increment App</Link>
         </li>
         <li>
-          <a href="#">Basic Authentication</a>
+          <Link>Basic Authentication</Link>
         </li>
       </ul>
     </div>
